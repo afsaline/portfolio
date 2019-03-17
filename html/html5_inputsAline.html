@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>HTML5 Inputs</title>
+    </head>
+    
+    <body>
+
+        <h1>HTML5 Inputs</h1>
+        
+        <!-- Before we get started:
+             Associate your labels to your inputs (good ux!)
+        -->
+        
+        <!-- At the form's element you can't use the label as expanded possibility to click and use the mouse, you're stuck to do just at the box, while the inputs you can expand the possibility once you named the for and their on ID -->
+        
+        <label for="fname">Click this label</label>
+        <input type="text" id="fname">
+        
+        <br><br>
+        
+        <!-- NEW HTML5 INPUT TYPES: each one of them will differentiate from each other-->
+        
+        <!-- Search -->
+        <label for="form-email">Search</label>
+        <input type="search" id="form-search">
+        
+        <br><br>
+        
+        <!-- Email -->
+        <!-- when you put the attribute required at the input will go to force to fill the email and some validation, even if it's a real one-->
+        
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email" required>
+        
+        <br><br>
+        
+        <!-- URL -->
+        <!-- when you add the attribute required will set up some sort of validation-->
+        <label for="form-url">URL</label>
+        <input type="url" id="form-url" required>
+        
+        <br><br>
+        
+        <!-- Number -->
+        <!-- Sometimes in the browser you can put the values min or max and have the option to select and validate-->
+        <label for="form-num">Number</label>
+        <input type="number" id="form-num" min="5" max="50" step="5">
+        
+        <br><br>
+        
+        <!-- Range -->
+        <label for="form-range">Range</label>
+        <input type="range" id="form-range" min="1" max="100" value="0">
+        
+        <br><br>
+        
+        <!-- Date -->
+        <!-- this sort of funcionalitty at the input runs in some sort of browsers ina more progressive way, doing a range of dates to validate-->
+        <label for="form-date">Date</label>
+        <input type="date" id="form-date" min="2015-01-01" max="2016-01-01">
+        
+        <br><br>
+        
+        <!-- Month -->
+        <!-- you are able to use the button supporting arrows and drive at the calendar-->
+        <label for="form-month">Month</label>
+        <input type="month" id="form-month">
+        
+        <br><br>
+        
+        <!-- Week -->
+        <label for="form-week">Week</label>
+        <input type="week" id="form-week">
+        
+        <br><br>
+        
+        <!-- Time -->
+        <label for="form-time">Time</label>
+        <input type="time" id="form-time">
+        
+        <br><br>
+        
+        <!-- Datetime -->
+        <label for="form-datetime">Datetime</label>
+        <input type="datetime" id="form-datetime">
+        
+        <br><br>
+        
+        <!-- Datetime Local -->
+        <label for="form-datetimelocal">Datetime Local</label>
+        <input type="datetime-local" id="form-datetimelocal">
+        
+        <br><br>
+        
+        <!-- Colour -->
+        <label for="form-color">Colour</label>
+        <input type="color" id="form-color">
+        
+    </body>
+    
+</html>

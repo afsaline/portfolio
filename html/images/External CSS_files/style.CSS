@@ -1,0 +1,26 @@
+body {
+    background-color: #fc3;
+    color: #333;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, Times, serif;
+}
+
+p{
+    font-size: 18px;
+    font-family: italic;
+}
+
+ol{
+    margin: 20px;
+    padding: 20px;
+    color: whitesmoke;
+}

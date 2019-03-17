@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    <title>Forms</title>
+    </head>
+
+    <body>
+        
+        <h1>Forms</h1>
+        
+        <form>
+            
+            <fieldset>
+                <!-- Is going to set up an area, delimited-->
+                
+                <legend>Profile info</legend>
+                
+                <label for="yourname">Your name</label>
+                <input type="Yourname" id="yourname" placeholder="Enter you name">
+                
+                <br>
+                <label>Your email</label>
+                <input type="email" placeholder="your@email.com">
+                
+                <br>
+                <label>Password</label>
+                <input type="password" placeholder="password">
+                
+                <br><br>
+                
+                <label>Gender</label><br>
+                
+                <!-- Radio bottons are related and should have a tag name with -- name="  "   -- that way you have the option to highlight just one of the botton in this case male or female -->
+                
+                <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender" >Male
+                
+                <br><br>
+                
+                <label>Type of computer</label><br>
+                <input type="checkbox">I have a laptop<br>
+                <input type="checkbox">I have a desktop<br>
+                
+                <br><br>
+                
+                <label> Age</label>
+                <select>
+                    <option>0-20</option>
+                    <option>20-40</option>
+                    <option>40-60</option>
+                    <option>60+</option>
+                </select>
+                
+                <br><br>
+                
+                <textarea rows="10" cols="69"></textarea>
+                
+                <br><br>
+                
+                <input type="submit" value="Save my info">
+                <input type="reset" value="Clear that info">
+                
+            </fieldset>
+        </form>
+        
+    </body>
+    
+</html>

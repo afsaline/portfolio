@@ -1,0 +1,106 @@
+body {
+    background-color: #fc3;
+    color: #333;
+}
+
+body#idClassPage{
+    background-color: hotpink
+}
+h1{
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, Times, serif;
+}
+
+p{
+    font-size: 18px;
+    font-family: italic;
+}
+
+ol{
+    margin: 20px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+/* This is how to use a CSS comment. */
+/* The comment can have multiple lines.
+like here
+is not a problem.
+*/
+
+/* Styles for the ID & Class Lecture*/
+
+#main-title{
+    color: #fc3;
+    background: #335;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+}
+.section-header{
+    color: aquamarine;
+    border: solid 4px blue;
+    padding: 40px 20px 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* Styles for the Descendent Selector Lecture */
+
+.primary-box {
+    background-color: white;
+    border: solid 10px #333;
+    padding: 20px;
+    }
+.primary-box h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.secondary-box {
+    background-color: #333;
+    color: #fff; 
+    padding: 10px;
+}
+
+.secondary-box p {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.secondary-box p em {
+    color:#fc3fc3;
+}
+
+/* Styles for the Grouping Selector Lecture
+
+They are used for efficency propuse because you can group different elemnts to style them. */
+
+/* How to make the content in the center of the page? mainContainer is a example in this leture */
+
+#mainContainer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.primary-box, .secondary-box{
+    margin: 30px 20px;
+}
+
+.inside-box{
+    border: solid 4px black;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    border-bottom: solid 6px black;
+    padding: 0 0 10px;
+}
+
+
+
+
