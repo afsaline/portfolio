@@ -6,6 +6,11 @@ $(function() {
         $('#box').fadeOut(1000);
     });
     
+    $('#box').click(function() {
+        alert('you just clicked the box');
+    });
+});
+
 //Grouping selector
 //$('h1,h3,h4').css('border', 'solid 1px red');
 
@@ -32,9 +37,3 @@ $(function() {
 
 //JQuery contains selector
 //$('div:contains("Brad")').css('border','solid 1px red');
-
-
-    $('#box').click(function() {
-        alert('you just clicked the box');
-    });
-});
