@@ -36,5 +36,5 @@ $(function() {
 
     $('#box').click(function() {
         alert('you just clicked the box');
-    
+    });
 });
