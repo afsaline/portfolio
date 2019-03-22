@@ -6,8 +6,8 @@ $(function() {
         $('#box').fadeOut(1000);
     });
     
-    $('#box').click(function() {
-        alert('you just clicked the box');
+    $('.thing').click(function() {
+        alert('you just clicked the thing');
     });
 });
 
