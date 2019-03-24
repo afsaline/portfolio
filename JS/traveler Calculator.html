@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Traveler Calculator</title>
+        
+        <!-- Normalize.css -->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        
+        <!-- Custom Styles -->
+        <link rel="stylesheet" type="text/css" href="travelercalculator.css">
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            <h1>Traveler Calculator</h1>
+            
+            <div id="calculator">
+                
+                <form>
+                    <label>
+                        How much did you spend?<br>
+                       US$ <input type="text" id="billAmount">
+                    </label>
+                    <label>
+                        What is your currency?<br>
+                        <select id="currency">
+                            <option disabled selected value="0">-- Choose an option --</option>
+                            <option value="euro">  Euro </option>
+                            <option value="uk-pound"> UK Pound </option>
+                            <option value="reais">  Reais </option>
+                            <option value="mexicanPeso">  MXN Peso </option>
+                            <option value="colombianPeso">  COP Peso </option>
+                            <option value="cubanPeso">  CUP Peso </option>
+                        </select>
+                    </label>
+<!--
+                    <label>
+                        How many people are sharing the bill?<br>
+                        <input type="text" id="totalPeople"> people
+                    </label>
+-->
+                    <button type="button" id="calculate">Calculate</button>
+                </form>
+                
+            </div><!-- calculator -->
+            
+            <div id="total">
+                <sup>$</sup><span id="">0.00</span>
+                <small id="each">each</small>
+            </div><!-- total -->
+        </div><!-- container -->
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    
+</html>

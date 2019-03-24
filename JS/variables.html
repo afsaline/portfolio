@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Variables</title>
+        
+        <!-- Normalize.css -->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        
+    </head>
+    
+    <body>
+        
+        <h1>Javascript Variables</h1>
+        
+        <script type="text/javascript">
+        
+            //var bucketOnBeach;
+            //bucketOnBeach = "sand, stones, shovel" The " = "sign is to sign value at the variable and storage;
+            //document.write(bucketOnBeach);
+            
+            var bucketOnBeach = "sand, stones, shovel";
+            document.write(bucketOnBeach);
+            
+            var a= 12;
+            var b= 24;
+            var c= a + b;
+            
+            document.write(c);
+            
+            document.write ("<br><br>");
+            
+            /* You can write long and descripted names of variable to build you website, be careful because you can start with digits, should be used words, you can not use some words as JS or math, those words will create a bug because they will crash in, because they are used on pre build functions. */
+            
+            var firstName;
+            var lastName;
+            var dateOfBirth;
+            
+            /* RESERVED WORDS YOU CAN NOT USE AS VARIABLES: 
+            http://www.w3schools.com/js/js_reserved.asp
+            */
+            
+            var x= 99.7; // number
+            var fancyPants= "Brad";
+            var stringNumber = "3.14"; // this one is not a number/ numerical value, but will be treated as a string number. Everything on quotyes is going to be treated as text, called strings.
+            
+            /* STATEMENTS */
+            
+            var firstName= "Brad",
+                lastName= "Hussey",
+                likesToSurf= "true";
+            //or in a single line statement like bellow:
+            
+            var firstName= "Brad",lastName= "Hussey",likesToSurf= "true";
+            
+            // You can have a multiple variables with a single statements, what are defined by coincidence and minimize keeping clean.
+            
+            // Statements are design by the quote declared; check the statement below where i can assign 
+            
+            // YOU CAN DO MATH!
+            var x = 100,
+                y = 2.462,
+                z = 40.99;
+            
+            var totalSum = x * y * z;
+            
+            document.write(totalSum);
+            
+            document.write("<br><br>");
+            
+            // CONCATENATION
+            
+            var foo = "Web" + " " + "Developer";
+            document.write(foo);
+            
+            document.write("<br><br>");
+            
+            var fName = "Brad",
+                lName = "Hussey",
+                fullName = fName + " " + lName;
+            
+            document.write(fullName);
+            
+            document.write("<br><br>");
+            
+            var blurb = "Johnny ";
+            blurb += "Bravo";
+            
+            document.write(blurb);
+            
+            document.write("<br><br>");
+            
+            
+            var e = "Hello" + 3.14;
+            document.write(e);
+            
+        
+        </script>
+        
+    </body>
+    
+</html>

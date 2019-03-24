@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Internal &amp; External Javascript</title>
+        
+        <!-- Normalize.css -->
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <h1>Internal &amp; External Javascript</h1>
+            <p id="output"></p>
+            
+        </div><!-- #container -->
+        
+        <!-- Javascript always loads last -->
+        
+        <!-- Internal Javascript -->
+        <script type="text/javascript">
+            
+            document.getElementById("output").innerHTML = "This text was created with Internal Javascript";
+            
+        </script>
+        
+        <!-- External Javascript -->
+        <script type="text/javascript" src="script.js"></script>
+        
+        <!-- 
+* Javascript should always be loaded last, that's why you going find right in the bottom of the body.
+
+* JS is for the behavior of the content and elements of the website or related with the user experience UX. 
+
+* JS is a programming language, and as a programming language JS give computers programs instructions. These instructions are gave through statements. The statements are separeted by semicolons (ponto e virgula).
+
+* semicolons = ponto e virgula = ;
+
+-->
+        
+    </body>
+    
+</html>
+

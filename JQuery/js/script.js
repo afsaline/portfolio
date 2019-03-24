@@ -1,16 +1,97 @@
 //script.js
 
-
+//EVENTS JQUERY METHODS
 $(function() {
-    $("button").click(function(){
+    $("button").click(function() {
         $('#box').fadeOut(1000);
     });
     
-    $('.thing').click(function() {
+    $('#box').click(function() {
         alert('you just clicked the thing');
     });
+        
+    $("input").blur(function() {
+        if( $(this).val() == "" ) {
+            $(this).css('border', 'solid 1px red');
+            $('#box').text('Forgot to add text?');
+        }
+    });  
+    
+    $('input').keydown(function(){
+        if( $(this).val() !=="") {
+            $(this).css('border','solid 1px green');
+            $('#box').text('Thanks for that!');
+        }
+    });
+    
+    $('#box').hover(function(){
+        $(this).text('you hovered in!');
+        
+    }, function() {
+        $(this).text('you hovered out!');
+    }); 
+    
+    // JQUERY CHAINING
+    // Chaining is about to do a group of commands for the same element;
+    
+    $('.notification-bar').delay(2000).slideDown().delay(3000).fadeOut();
+    
+    //Jquery hide/show
+    
+    //$('h1').hide();
+    //$('div.hidden').show();
+    //$('div.hidden').fadeIn(8000);
+    
+    $('#box1').click(function(){
+        $(this).fadeTo( 1000, 0.25, function() {
+        $(this).slideUp();
+        });
+    });
+    
+    $('div.hidden').slideDown();
+    
+    $('button').click(function(){
+        $('#box1').slideToggle();
+    });
+    
+    //Jquery Animate
+    // Basic Sintax of Animate bellow:
+    
+    $('#left').click(function(){
+        $('.box').animate({
+            left: "-=40px",
+            fontSize:"+=2px"
+    }, function() {
+        });
+    });
+    
+    $('#up').click(function(){
+        $('.box').animate({
+            top: "-=40px",
+            opacity:"+=0.1"
+    }, function() {
+        });
+    });
+
+    $('#right').click(function(){
+        $('.box').animate({
+            left: "+=40px",
+            fontSize:"-=2px"
+    }, function() {
+        });
+    });
+    
+    $('#down').click(function(){
+        $('.box').animate({
+            top: "+=40px",
+            opacity:"-=0.1"
+    }, function() {
+        });
+    });
+    
 });
 
+// GROUPING SELECTORS
 //Grouping selector
 //$('h1,h3,h4').css('border', 'solid 1px red');
 
@@ -37,3 +118,7 @@ $(function() {
 
 //JQuery contains selector
 //$('div:contains("Brad")').css('border','solid 1px red');
+
+
+
+ 
