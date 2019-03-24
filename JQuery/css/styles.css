@@ -108,7 +108,7 @@ input[type="button"] {
     background: #77b72f;
     color: white;
     padding: 10px 20px;
-    border: solid 1px #444;
+    border: dashed 1px #444;
 }
 
 input#reset {

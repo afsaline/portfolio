@@ -31,6 +31,41 @@ $(function() {
         $(this).text('you hovered out!');
     }); 
     
+    //Car Racer 2.0
+    
+    //click the go buttom:
+    $('#go').click(function(){
+        
+        //get the width of the cars:
+        var carWidth = $('#car1').width();
+        
+        //get the width of the racetrack
+        var raceTrackWidth = $(window).width() -carWidth;
+        
+        //generate a random # between 1 and 5000: this formula will set up the race between the cars once the computer will pick random numbers for each and multiple by 5000 which is time
+        
+        var raceTime1 = Math.floor( (Math.random() * 5000) +1 );
+        var raceTime2 = Math.floor( (Math.random() * 5000) +1 );
+        
+        //set a flag variable to FALSE by default
+        var isComplete = false;
+        
+        //set a flag variable to FIRST by default
+        var place = 'first';
+        
+        //animate car 1
+        $('#car1').animate({
+            
+            //move the car width of the racetrack
+            left: raceTrackWidth
+            
+        }, raceTime1, function(){
+            
+            //                   
+        });
+        
+    });
+    
     // JQUERY CHAINING
     // Chaining is about to do a group of commands for the same element;
     
@@ -88,6 +123,26 @@ $(function() {
     }, function() {
         });
     });
+    
+    //Jquery CSS
+    
+    // JQuery - CSS basic syntax: you can do multiple times changing the values but is not th ebest practice this case the best practice is chaining.
+    
+    //$('#circle2'=div).css('background'=property, '#8a8d22'=value)
+    ///$('#circle2').css('background', '#8a8d22')
+    
+    //chaining method bellow:
+    
+    $('#circle2').css({
+    'display':'inline-block',
+    'background':'#8a8d22',
+    'color':'white',
+    'text-align':'center',
+    'line-height':'140px',
+    'height':'140px',
+    'width':'140px',
+    'margin':'40px',
+    }).addClass('circleShape');
     
 });
 
